@@ -59,8 +59,8 @@ typed-cursor typed-cursor--blink{
     -webkit-backdrop-filter: blur( 13.5px );
 }
 .grid-container .row-main .card {
-    width: 90;
-    height: 90;
+    width: 90%;
+    height: 90%;
 }
 .grid-container .row-code #code .card {
     width: 80vw;
@@ -451,23 +451,35 @@ typed-cursor typed-cursor--blink{
     border-top-right-radius: 10px;
 }
 .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image {
-	background-image: url('/curriculum-vitae/static/img/gradient_1_with_code_decorators.jpg');
+	background-image: url('/curriculum-vitae/static/img/code_recaptcha.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image {
-	background-image: url('/curriculum-vitae/static/img/gradient_1_with_code.jpg');
+	background-image: url('/curriculum-vitae/static/img/code_sign_in.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
-    background-image: url('/curriculum-vitae/static/img/gradient_fibonacci.jpg');
+    background-image: url('/curriculum-vitae/static/img/code_fibonacci.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image {
     background-color: #F0F0F0;
     overflow: scroll;
 }
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+    background: #F0F0F0;
+    margin: 0;
+    border-left-style: double;
+    font-size: 0.5em;
+    padding-left: 60px;
+}
 .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre code {
     overflow-wrap: break-word;
 }
 .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image {
-    background-image: url('/curriculum-vitae/static/img/gradient_empty.jpg');
+    background-image: url('/curriculum-vitae/static/img/gradient.jpg');
+}
+.grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+.grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+.grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+    display: none;
 }
 .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
     display: flex;
@@ -632,4 +644,236 @@ typed-cursor typed-cursor--blink{
     list-style: square;
     color: #CABEB1;
     padding: 5px;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience ul li .position,
+.grid-container .row-experience .row-experience--block-2 .block--experience ul li .position,
+.grid-container .row-experience .row-experience--block-3 .block--experience ul li .position,
+.grid-container .row-experience .row-experience--block-4 .block--experience ul li .position,
+.grid-container .row-experience .row-experience--block-5 .block--experience ul li .position
+.grid-container .row-experience .row-experience--block-6 .block--experience ul li .position {
+    text-align: center;
+    list-style: none;
+    padding: 10px;
+    color: #FFCB84;
+}
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ---------------- Portrait ----------- */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    .container {
+        display: flex;
+        flex-direction: row;
+        overflow: scroll;
+    }
+    .container .serviceBox--1, .container .serviceBox--2,
+    .container .serviceBox--3, .container .serviceBox--4 {
+        width: 90vw;
+    }
+    .container .serviceBox--1, .container .serviceBox--3 {
+        border-radius: 0px;
+    }
+    .container .serviceBox--1 {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .serviceBox--4 {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
+        border-radius: 0px;
+    }
+    .container .serviceBox--1 .icon {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .serviceBox--4 .icon {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .container .serviceBox--1:hover .content,
+    .container .serviceBox--2:hover .content,
+    .container .serviceBox--3:hover .content,
+    .container .serviceBox--4:hover .content {
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .container .serviceBox--1 .content .content--group,
+    .container .serviceBox--2 .content .content--group,
+    .container .serviceBox--3 .content .content--group,
+    .container .serviceBox--4 .content .content--group {
+        line-height: 2.5em;
+    }
+    .container .serviceBox--1:hover .content .content--group a {
+        font-size: 20px;
+    }
+    .container .serviceBox--1:hover .content .content--group .content--group--firstline,
+    .container .serviceBox--1:hover .content .content--group .content--group--secondline,
+    .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+    .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+    .container .serviceBox--3:hover .content .content--group .content--group--firstline,
+    .container .serviceBox--3:hover .content .content--group .content--group--secondline,
+    .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+    .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+    .container .serviceBox--4:hover .content .content--group .content--group--firstline,
+    .container .serviceBox--4:hover .content .content--group .content--group--secondline {
+        width: 75%;
+    }
+    .container .serviceBox--1 .content .content--group span,
+    .container .serviceBox--2 .content .content--group span,
+    .container .serviceBox--3 .content .content--group span,
+    .container .serviceBox--4 .content .content--group span {
+        font-size: 20px;
+    }
+    .container .serviceBox--2 .content .content--motivation {
+        width: 50vw;
+    }
+    .grid-container .row-code {
+        display: flex;
+        flex-direction: column;
+    }
+    .grid-container .row-code #annotate {
+        padding: 20px;
+    }
+    .grid-container .row-code #annotate p,
+    .grid-container .row-code #annotate span {
+        writing-mode: inherit;
+    }
+    .grid-container .row-code #code .card .active {
+        flex-direction: column;
+    }
+    .grid-container .row-code #code .card .carousel__nav {
+        background-color: #174347;
+        width: 100%;
+        text-align: center;
+        border-radius: 0;
+    }
+    .grid-container .row-code #code .card .carousel__icon {
+        fill: #AA9989;
+        width: 25px;
+        height: 25px;
+    }
+    .grid-container .row-code #code .card .carousel-item__info {
+        width: 100%;
+        height: 60%;
+        padding: 0px;
+        text-align: center;
+    }
+    .grid-container .row-code #code .card .carousel-item__image {
+        width: 100%;
+        border-top-right-radius: 45px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+    .grid-container .row-code #code .card .carousel-item__description {
+        width: 75%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+        background-image: url(/curriculum-vitae/static/img/gradient.jpg);
+    }
+    .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+        display: flex;
+    }
+    .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 36px;
+    }
+    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        cursor: default;
+        display: flex;
+    }
+    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
+    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
+    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
+        width: 100%;
+        height: 60%;
+        border-top: 10px solid #0D2B2E;
+        border-bottom: 10px solid #0D2B2E;
+        margin-bottom: 36px;
+        user-select: none;
+        -webkit-user-select: none;
+    }
+    .grid-container .row-code #code .card .carousel-item__subtitle {
+        margin-top: 15px;
+    }
+    .grid-container .row-code #code .card .carousel-item__title {
+        letter-spacing: 1px;
+        font-size: 30px;
+    }
+    .grid-container .row-code #code .card .carousel-item__description {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+    .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+        border-left-style: none;
+        border-top-style: double;
+    }
+    .grid-container .row-experience {
+        height: calc(100% + 20px);
+    }
+    .grid-container .row-experience .zz {
+        display: flex;
+        flex-direction: column;
+        height: calc(100% - 10px);
+        padding-top: 10px;
+    }
+    .grid-container .row-experience .zz .row-experience--block-1,
+    .grid-container .row-experience .zz .row-experience--block-2,
+    .grid-container .row-experience .zz .row-experience--block-3,
+    .grid-container .row-experience .zz .row-experience--block-4,
+    .grid-container .row-experience .zz .row-experience--block-5, 
+    .grid-container .row-experience .zz .row-experience--block-6 {
+        height: 100vh;
+    }
+    .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-2 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-3 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-5 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+        margin-top: 40px;
+    }
+    .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-5 .block--experience a img {
+        width: 150px;
+        height: 150px;
+    }
+    .grid-container .row-experience .row-experience--block-2 .block--experience a img {
+        width: 150px;
+        height: 110px;
+    }
+    .grid-container .row-experience .row-experience--block-3 .block--experience a img {
+        width: 200px;
+        height: 100px;
+        filter: brightness(1500%);
+    }
+    .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+    .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+        width: 230px;
+        height: 130px;
+    }
+    .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+    .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+    .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+    .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+    .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+    .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+        font-size: 1em;
+    }
 }
