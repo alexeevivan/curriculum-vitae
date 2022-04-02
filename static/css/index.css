@@ -1,0 +1,635 @@
+body {
+    background-color: #2F2F2F;
+    margin: 0;
+}
+ul {
+    text-align: initial;
+    padding-inline-start: 0px;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+ul li {
+    list-style: none;
+}
+ul li a {
+    color: #FFF;
+    font-size: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: 0.5s;
+}
+ul li a:hover {
+    color: #FFCB84;
+    transition: 0.5s;
+    background-size: 100% 1px;
+    transform: translateX(5%);
+}
+.typed-cursor {
+    color: #2F2F2F;
+}
+typed-cursor typed-cursor--blink{
+    color: #2F2F2F;
+}
+.grid-container {
+    display: grid;
+    grid-template-rows: auto;
+    top: 0;
+}
+.grid-container > div {
+    height: 100vh;
+    background-attachment: fixed;
+}
+.grid-container .row-main {
+    background-image: url(/static/img/main.svg);
+    background-size: 100% 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container .row-main .card, .grid-container .row-code #code .card {
+    border: 1px dotted #ffcb74;
+    border-radius: 10px;
+    background-color: rgba(255, 203, 116, 0.15);
+    backdrop-filter: blur( 13.5px );
+    -webkit-backdrop-filter: blur( 13.5px );
+}
+.grid-container .row-main .card {
+    width: 90;
+    height: 90;
+}
+.grid-container .row-code #code .card {
+    width: 80vw;
+    height: 80vh;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+    flex-wrap: wrap;
+}
+.container .serviceBox--1, .container .serviceBox--2,
+.container .serviceBox--3, .container .serviceBox--4 {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    transition: 1s;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+}
+.container .serviceBox--1 {
+    border-top-left-radius: 10px;
+}
+.container .serviceBox--2 {
+    border-top-right-radius: 10px;
+}
+.container .serviceBox--3 {
+    border-bottom-left-radius: 10px;
+}
+.container .serviceBox--4 {
+    border-bottom-right-radius: 10px;
+}
+.container .serviceBox--1, .container .serviceBox--2,
+.container .serviceBox--3, .container .serviceBox--4{
+    width: 45vw;
+    height: 45vh;
+}
+.container .serviceBox--1:hover, .container .serviceBox--2:hover,
+.container .serviceBox--3:hover, .container .serviceBox--4:hover {
+    transition: 1s;
+}
+.container .serviceBox--1 .icon, .container .serviceBox--2 .icon,
+.container .serviceBox--3 .icon, .container .serviceBox--4 .icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--i);
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    transition-delay: 0.25s;
+}
+.container .serviceBox--1:hover .icon, .container .serviceBox--2:hover .icon,
+.container .serviceBox--3:hover .icon, .container .serviceBox--4:hover .icon {
+    top: calc(50% - 40px);
+    left: 15px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition-delay: 0s;
+}
+.container .serviceBox--1 .icon span, .container .serviceBox--2 .icon span {
+    font-size: 2.5em;
+    color: #fff;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.container .serviceBox--3 .icon span, .container .serviceBox--4 .icon span {
+    color: #111111;
+    font-size: 2.5em;
+    transition: 0.5s;
+    transition-delay: 0.25s;
+}
+.container .serviceBox--1:hover .icon span, .container .serviceBox--2 .icon:hover span,
+.container .serviceBox--3:hover .icon span, .container .serviceBox--4 .icon:hover span {
+    font-size: 2em;
+    transition-delay: 0s;
+}
+.container .serviceBox--1 .icon p, .container .serviceBox--2 .icon p {
+    position: absolute;
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 1.5em;
+    transition: 2.25s;
+    transform: scale(1);
+    font-family: 'SF Pro Display';
+}
+.container .serviceBox--3 .icon p, .container .serviceBox--4 .icon p {
+    position: absolute;
+    margin-top: 50px;
+    color: #111111;
+    font-size: 1.5em;
+    transition: 2.25s;
+    transform: scale(1);
+    font-family: 'SF Pro Display';
+}
+.container .serviceBox--1:hover .icon p, .container .serviceBox--2:hover .icon p,
+.container .serviceBox--3:hover .icon p, .container .serviceBox--4:hover .icon p {
+    color: transparent;
+    transform: scale(0);
+    transition: 0.25s;
+}
+.container .serviceBox--1 .content, .container .serviceBox--2 .content,
+.container .serviceBox--3 .content, .container .serviceBox--4 .content {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.container .serviceBox--1 .content, .container .serviceBox--3 .content,
+.container .serviceBox--4 .content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 45vw;
+    height: 45vh;
+}
+.typed-cursor {
+    margin-top: 1px;
+}
+.container .serviceBox--2 .content {
+    display: grid;
+    grid-template-rows: 20% 1fr;
+    width: 35vw;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .serviceBox--2 .content .content--text {
+    margin: auto;
+}
+.container .serviceBox--1:hover .content, .container .serviceBox--2:hover .content,
+.container .serviceBox--3:hover .content, .container .serviceBox--4:hover .content{
+    transform: scale(1);
+    transition-delay: 0.25s;
+}
+.container .serviceBox--1 .content h2, .container .serviceBox--2 .content h2,
+.container .serviceBox--3 .content h2, .container .serviceBox--4 .content h2 {
+    display: initial;
+    margin: auto;
+    color: #2F2F2F;
+    font-family: 'SF Pro Display';
+}
+.container .serviceBox--2 .content .content--motivation {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container .serviceBox--2 .content .content--motivation p {
+    text-align: justify;
+    text-indent: 20px;
+    font-family: 'SF Pro Display';
+}
+.container .serviceBox--2 .content .content--motivation p .color-changing {
+    color: #A10101;
+    transition: 0.5s;
+}
+.container .serviceBox--2 .content .content--motivation p .color-changing:hover {
+    color: #01a116;
+    transition: 0.5s;
+}
+.container .serviceBox--2 .content .content--motivation .content--motivation--no-margin {
+    margin-top: 0;
+}
+.container .serviceBox--1 .content .content--group, .container .serviceBox--2 .content .content--group,
+.container .serviceBox--3 .content .content--group, .container .serviceBox--4 .content .content--group {
+    line-height: 1.5em;
+    font-family: 'SF Pro Display';
+}
+.container .serviceBox--1 .content .content--group span, .container .serviceBox--2 .content .content--group span,
+.container .serviceBox--3 .content .content--group span, .container .serviceBox--4 .content .content--group span {
+    font-size: 15px;
+}
+.container .serviceBox--1 .content .content--group a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+.container .serviceBox--1 .content .content--group, .container .serviceBox--3 .content .content--group,
+.container .serviceBox--4 .content .content--group {
+    margin: auto;
+}
+.container .serviceBox--1:hover .content .content--group .content--group--firstline,
+.container .serviceBox--1:hover .content .content--group .content--group--secondline,
+.container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+.container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+.container .serviceBox--3:hover .content .content--group .content--group--firstline,
+.container .serviceBox--3:hover .content .content--group .content--group--secondline,
+.container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+.container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+.container .serviceBox--4:hover .content .content--group .content--group--firstline,
+.container .serviceBox--4:hover .content .content--group .content--group--secondline {
+    display: inline-block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--i);
+    padding: 4px;
+    border-radius: 10px;
+}
+.container .serviceBox--1:hover .content .content--group a {
+    font-size: 15px;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: 0.5s;
+}
+.container .serviceBox--1:hover .content .content--group a:hover {
+    color: #FFCB84;
+    transition: 0.5s;
+    background-size: 100% 1px;
+    transform: translateX(5%);
+}
+.container .serviceBox--3:hover .icon, .container .serviceBox--4:hover .icon {
+    -webkit-box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.73) inset, 5px 5px 5px 0 rgb(47, 47, 47); 
+    -moz-box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.73) inset, 5px 5px 5px 0 rgb(47, 47, 47); 
+    box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.73) inset, 5px 5px 5px 0 rgb(47, 47, 47);
+}
+.grid-container .row-code {
+    background-image: url(/static/img/gradient.jpg);
+    display: grid;
+    grid-template-areas: "annotate code";
+    grid-template-columns: 10vw 1fr;
+}
+.grid-container .row-code #annotate {
+    grid-area: annotate;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container .row-code #annotate p, .grid-container .row-code #annotate span {
+    font-family: 'SF Pro Display';
+    font-size: 25px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    cursor: default;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.grid-container .row-code #annotate p {
+    color: #B38B59;
+}
+.grid-container .row-code #annotate span {
+    color: #011413;
+    background-color: #B38B59;
+    border-radius: 30px;
+    padding: 3px;
+}
+.grid-container .row-code #annotate span:hover {
+    color: #B38B59;
+    background-color: transparent;
+}
+.grid-container .row-code #code {
+    grid-area: code;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container .row-code #code .card .carousel {
+	width: 80vw;
+	height: 80vh;
+	display: flex;  
+	overflow: hidden;
+	position: relative;
+    border-radius: 10px;
+}
+.grid-container .row-code #code .card .carousel-item {
+  	visibility:visible;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: flex-end;
+      -webkit-align-items: center;
+    -webkit-justify-content: flex-end;
+    position: relative;
+    background-color: #F0F0F0;
+    flex-shrink: 0;
+   -webkit-flex-shrink: 0;
+    position: absolute;
+    z-index: 0;
+  	transition: 0.6s all linear;
+}
+.grid-container .row-code #code .card .carousel-item__info {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	display: -webkit-flex;
+	-webkit-justify-content: center;
+	-webkit-flex-direction: column;
+	order: 1;
+	left: 0;
+	margin: auto;
+	padding: 0 40px;
+	width: 20%;
+}
+.grid-container .row-code #code .card .carousel-item__image {
+    width: 80%;
+    height: 100%;
+    order: 2;
+    align-self: flex-end;
+    flex-basis: 60%;
+    -webkit-order: 2;
+    -webkit-align-self: flex-end;
+    -webkit-flex-basis: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+	position:relative;
+	transform: translateX(100%);
+	transition: 0.6s all ease-in-out;
+}
+.grid-container .row-code #code .card .carousel-item__subtitle {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 10px;
+    text-transform: uppercase;
+    margin: 0;
+    color: #7E7E7E;    
+    font-weight: 700;
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.4s all ease-in-out;
+}
+.grid-container .row-code #code .card .carousel-item__subtitle h2 {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+}
+.grid-container .row-code #code .card .carousel-item__subtitle h2:hover {
+    background-size: 100% 2px;
+    transition: 0.5s;
+    transform: translateX(5%);
+}
+.grid-container .row-code #code .card .carousel-item__title {
+    margin: 15px 0 0 0;
+    font-family: 'Playfair Display', serif;
+    font-size: 44px;
+    line-height: 45px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #2C2C2C;
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+}
+.grid-container .row-code #code .card .carousel-item__description {
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+    margin-top: 35px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    color: #7e7e7e;
+    line-height: 22px;
+    margin-bottom: 35px;
+}
+.grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+.grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+.grid-container .row-code #code .card .carousel-item--3 .carousel-item__image,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image,
+.grid-container .row-code #code .card .carousel-item--5 .carousel-item__image {
+    border-top-right-radius: 10px;
+}
+.grid-container .row-code #code .card .carousel-item--1 .carousel-item__image {
+	background-image: url('/static/img/gradient_1_with_code_decorators.jpg');
+}
+.grid-container .row-code #code .card .carousel-item--2 .carousel-item__image {
+	background-image: url('/static/img/gradient_1_with_code.jpg');
+}
+.grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+    background-image: url('/static/img/gradient_fibonacci.jpg');
+}
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image {
+    background-color: #F0F0F0;
+    overflow: scroll;
+}
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre code {
+    overflow-wrap: break-word;
+}
+.grid-container .row-code #code .card .carousel-item--5 .carousel-item__image {
+    background-image: url('/static/img/gradient_empty.jpg');
+}
+.grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+    display: flex;
+    height: 80vh;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+}
+.grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+    width: 350px;
+    height: 350px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+.grid-container .row-code #code .card .carousel-item__btn {
+    width: 35%;
+    color: #2C2C2C;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 3px;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin: 0;
+    width: 35%;
+    font-weight: 700;
+  	text-decoration: none;
+    transform: translateY(25%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.6s all ease-in-out;
+}
+.grid-container .row-code #code .card .carousel__nav {
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+  	bottom: 0;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.grid-container .row-code #code .card .carousel__icon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+  	fill: #5d5d5d;
+    transition: 0.5s;
+}
+.grid-container .row-code #code .card .carousel__icon:hover {
+    fill: #ffcb74;
+    transition: 0.5s;
+}
+.grid-container .row-code #code .card .carousel__arrow {
+    cursor: pointer;
+    display: inline-block;
+    padding: 11px 15px;
+    position: relative;
+}
+.grid-container .row-code #code .card .carousel__arrow:nth-child(1):after {
+    content:'';
+    right: -3px;
+    position: absolute;
+    width: 1px;
+    background-color: #b0b0b0;
+    height: 14px;
+    top: 50%;
+    margin-top: -7px;
+    transition: 0.5s;
+}
+.grid-container .row-code #code .card .carousel__arrow:hover {
+    background-color: #0f3235;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+.grid-container .row-code #code .card .active{
+	z-index: 1;
+	display: flex;
+	visibility:visible;
+}
+.grid-container .row-code #code .card .active .carousel-item__subtitle,
+.grid-container .row-code #code .card .active .carousel-item__title,
+.grid-container .row-code #code .card .active .carousel-item__description,
+.grid-container .row-code #code .card .active .carousel-item__btn{
+    transform: translateY(0);
+    opacity: 1;
+  	transition: 0.6s all ease-in-out;
+    visibility: visible;
+}
+.grid-container .row-code #code .card .active .carousel-item__image{ 
+	transition: 0.6s all ease-in-out;
+	transform: translateX(0);
+}
+.grid-container .row-experience {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: #520E0E;
+}
+.grid-container .row-experience .zz {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    margin: auto;
+    background: rgba(123, 255, 0, 0);
+}
+.grid-container .row-experience .zz .row-experience--block-1,
+.grid-container .row-experience .zz .row-experience--block-2,
+.grid-container .row-experience .zz .row-experience--block-3,
+.grid-container .row-experience .zz .row-experience--block-4,
+.grid-container .row-experience .zz .row-experience--block-5,
+.grid-container .row-experience .zz .row-experience--block-6 {
+    background-color: #011413;
+    border-radius: 10px;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience,
+.grid-container .row-experience .row-experience--block-2 .block--experience,
+.grid-container .row-experience .row-experience--block-3 .block--experience,
+.grid-container .row-experience .row-experience--block-4 .block--experience,
+.grid-container .row-experience .row-experience--block-5 .block--experience,
+.grid-container .row-experience .row-experience--block-6 .block--experience {
+    display: grid;
+    grid-template-rows: 15% 1fr;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #AA9A8A;
+    border-radius: 10px;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience a,
+.grid-container .row-experience .row-experience--block-2 .block--experience a,
+.grid-container .row-experience .row-experience--block-3 .block--experience a,
+.grid-container .row-experience .row-experience--block-4 .block--experience a,
+.grid-container .row-experience .row-experience--block-5 .block--experience a,
+.grid-container .row-experience .row-experience--block-6 .block--experience a {
+    text-align: center;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience a img,
+.grid-container .row-experience .row-experience--block-2 .block--experience a img,
+.grid-container .row-experience .row-experience--block-3 .block--experience a img,
+.grid-container .row-experience .row-experience--block-4 .block--experience a img,
+.grid-container .row-experience .row-experience--block-5 .block--experience a img,
+.grid-container .row-experience .row-experience--block-6 .block--experience a img {
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience ul,
+.grid-container .row-experience .row-experience--block-2 .block--experience ul,
+.grid-container .row-experience .row-experience--block-3 .block--experience ul,
+.grid-container .row-experience .row-experience--block-4 .block--experience ul,
+.grid-container .row-experience .row-experience--block-5 .block--experience ul,
+.grid-container .row-experience .row-experience--block-6 .block--experience ul {
+    margin: auto 15% auto 15%;;
+}
+.grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+.grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+.grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+.grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+.grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+.grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+    font-family: 'SF Pro Display';
+    list-style: square;
+    color: #CABEB1;
+    padding: 5px;
+}
