@@ -45,7 +45,7 @@ typed-cursor typed-cursor--blink{
     background-attachment: fixed;
 }
 .grid-container .row-main {
-    background-image: url(/static/img/main.svg);
+    background-image: url(/curriculum-vitae/static/img/main.svg);
     background-size: 100% 100%;
     display: flex;
     justify-content: center;
@@ -298,7 +298,7 @@ typed-cursor typed-cursor--blink{
     box-shadow: 5px 5px 7px -5px rgba(34, 60, 80, 0.73) inset, 5px 5px 5px 0 rgb(47, 47, 47);
 }
 .grid-container .row-code {
-    background-image: url(/static/img/gradient.jpg);
+    background-image: url(/curriculum-vitae/static/img/gradient.jpg);
     display: grid;
     grid-template-areas: "annotate code";
     grid-template-columns: 10vw 1fr;
@@ -451,13 +451,13 @@ typed-cursor typed-cursor--blink{
     border-top-right-radius: 10px;
 }
 .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image {
-	background-image: url('/static/img/gradient_1_with_code_decorators.jpg');
+	background-image: url('/curriculum-vitae/static/img/gradient_1_with_code_decorators.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image {
-	background-image: url('/static/img/gradient_1_with_code.jpg');
+	background-image: url('/curriculum-vitae/static/img/gradient_1_with_code.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
-    background-image: url('/static/img/gradient_fibonacci.jpg');
+    background-image: url('/curriculum-vitae/static/img/gradient_fibonacci.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image {
     background-color: #F0F0F0;
@@ -467,7 +467,7 @@ typed-cursor typed-cursor--blink{
     overflow-wrap: break-word;
 }
 .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image {
-    background-image: url('/static/img/gradient_empty.jpg');
+    background-image: url('/curriculum-vitae/static/img/gradient_empty.jpg');
 }
 .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
     display: flex;
