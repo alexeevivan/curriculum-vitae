@@ -678,7 +678,8 @@ typed-cursor typed-cursor--blink{
 }
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* ---------------- Portrait ----------- */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) { */
+@media screen and (min-width: 375px) {
     .container {
         display: flex;
         flex-direction: row;
@@ -687,6 +688,7 @@ typed-cursor typed-cursor--blink{
     .container .serviceBox--1, .container .serviceBox--2,
     .container .serviceBox--3, .container .serviceBox--4 {
         width: 90vw;
+        height: 70vh;
     }
     .container .serviceBox--1, .container .serviceBox--3 {
         border-radius: 0px;
@@ -698,7 +700,6 @@ typed-cursor typed-cursor--blink{
     .container .serviceBox--4 {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
-        height: 60vh;
     }
     .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
         border-radius: 0px;
@@ -710,6 +711,18 @@ typed-cursor typed-cursor--blink{
     .container .serviceBox--4 .icon {
         border-bottom-left-radius: 10px;
         border-bottom-right-radius: 10px;
+    }
+    .container .serviceBox--1:hover .icon,
+    .container .serviceBox--2:hover .icon,
+    .container .serviceBox--3:hover .icon,
+    .container .serviceBox--4:hover .icon {
+        top: 15px;
+    }
+    .container .serviceBox--1 .content,
+    .container .serviceBox--2 .content,
+    .container .serviceBox--3 .content,
+    .container .serviceBox--4 .content {
+        height: 70vh;
     }
     .container .serviceBox--1:hover .content,
     .container .serviceBox--2:hover .content,
@@ -750,10 +763,6 @@ typed-cursor typed-cursor--blink{
         width: 50%;
         margin: 0px;
         padding: 0px;
-    }
-    .container .serviceBox--4:hover .content .content--group ul {
-        margin-left: 30%;
-        margin-right: 0%;
     }
     .container .serviceBox--1 .content .content--group span,
     .container .serviceBox--2 .content .content--group span,
