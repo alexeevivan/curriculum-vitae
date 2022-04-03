@@ -679,251 +679,1020 @@ typed-cursor typed-cursor--blink{
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 /* ---------------- Portrait ----------- */
 /* iphone 6, 6s, 7, 8 */
-@media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (-webkit-device-pixel-ratio: 2) {
-    .container {
-        display: flex;
-        flex-direction: row;
-        overflow: scroll;
+@media only screen
+    and (min-device-width: 375px)
+    and (max-device-height: 667px)
+    and (-webkit-device-pixel-ratio: 2) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        .container .serviceBox--1, .container .serviceBox--2,
+        .container .serviceBox--3, .container .serviceBox--4 {
+            width: 90vw;
+            height: 70vh;
+        }
+        .container .serviceBox--1, .container .serviceBox--3 {
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 .icon {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 .icon {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1:hover .icon,
+        .container .serviceBox--2:hover .icon,
+        .container .serviceBox--3:hover .icon,
+        .container .serviceBox--4:hover .icon {
+            top: 15px;
+        }
+        .container .serviceBox--1 .content,
+        .container .serviceBox--2 .content,
+        .container .serviceBox--3 .content,
+        .container .serviceBox--4 .content {
+            height: 70vh;
+        }
+        .container .serviceBox--1:hover .content,
+        .container .serviceBox--2:hover .content,
+        .container .serviceBox--3:hover .content {
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container .serviceBox--4:hover .content {
+            width: 100%;
+            height: 100%;
+        }
+        .container .serviceBox--1 .content h2,
+        .container .serviceBox--2 .content h2,
+        .container .serviceBox--3 .content h2,
+        .container .serviceBox--4 .content h2 {
+            font-size: 1em;
+        }
+        .container .serviceBox--1 .content .content--group,
+        .container .serviceBox--2 .content .content--group,
+        .container .serviceBox--3 .content .content--group,
+        .container .serviceBox--4 .content .content--group {
+            line-height: 1.9em;
+        }
+        .container .serviceBox--1:hover .content .content--group a {
+            font-size: 15px;
+        }
+        .container .serviceBox--1:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--1:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--3:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--3:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--4:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--4:hover .content .content--group .content--group--secondline {
+            width: 50%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container .serviceBox--1 .content .content--group span,
+        .container .serviceBox--2 .content .content--group span,
+        .container .serviceBox--3 .content .content--group span,
+        .container .serviceBox--4 .content .content--group span {
+            font-size: 15px;
+        }
+        .container .serviceBox--2 .content .content--motivation {
+            width: 55vw;
+            margin-right: 0px;
+            margin-left: 20%;
+        }
+        .container .serviceBox--2 .content .content--motivation p {
+            font-size: 12px;
+        }
+        .grid-container .row-code {
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-container .row-code #annotate {
+            padding: 20px;
+        }
+        .grid-container .row-code #annotate p,
+        .grid-container .row-code #annotate span {
+            writing-mode: inherit;
+        }
+        .grid-container .row-code #code .card .active {
+            flex-direction: column;
+        }
+        .grid-container .row-code #code .card .carousel__nav {
+            background-color: #174347;
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+        }
+        .grid-container .row-code #code .card .carousel__icon {
+            fill: #AA9989;
+            width: 25px;
+            height: 25px;
+        }
+        .grid-container .row-code #code .card .carousel-item__info {
+            width: 100%;
+            height: 60%;
+            padding: 0px;
+            text-align: center;
+        }
+        .grid-container .row-code #code .card .carousel-item__image {
+            width: 100%;
+            border-top-right-radius: 45px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+            background-image: url(/curriculum-vitae/static/img/gradient.jpg);
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+            width: 50%;
+            height: 60%;
+            margin-bottom: 36px;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
+            width: 100%;
+            height: 60%;
+            border-top: 10px solid #0D2B2E;
+            border-bottom: 10px solid #0D2B2E;
+            margin-bottom: 36px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .grid-container .row-code #code .card .carousel-item__subtitle {
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item__title {
+            letter-spacing: 1px;
+            font-size: 30px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+            border-left-style: none;
+            border-top-style: double;
+        }
+        .grid-container .row-experience {
+            height: calc(100% + 20px);
+        }
+        .grid-container .row-experience .zz {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 10px);
+            padding-top: 10px;
+        }
+        .grid-container .row-experience .zz .row-experience--block-1,
+        .grid-container .row-experience .zz .row-experience--block-2,
+        .grid-container .row-experience .zz .row-experience--block-3,
+        .grid-container .row-experience .zz .row-experience--block-4,
+        .grid-container .row-experience .zz .row-experience--block-5, 
+        .grid-container .row-experience .zz .row-experience--block-6 {
+            height: 100vh;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            margin-top: 40px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img {
+            width: 150px;
+            height: 150px;
+        }
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img {
+            width: 150px;
+            height: 110px;
+        }
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img {
+            width: 200px;
+            height: 100px;
+            filter: brightness(1500%);
+        }
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            width: 230px;
+            height: 130px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+            font-size: 1.25em;
+        }
     }
-    .container .serviceBox--1, .container .serviceBox--2,
-    .container .serviceBox--3, .container .serviceBox--4 {
-        width: 90vw;
-        height: 70vh;
+/* iphone 6+, 6s+, 7+, 8+ */
+@media only screen 
+    and (min-device-width: 414px) 
+    and (max-device-height: 736px) 
+    and (-webkit-device-pixel-ratio: 3) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        .container .serviceBox--1, .container .serviceBox--2,
+        .container .serviceBox--3, .container .serviceBox--4 {
+            width: 90vw;
+            height: 70vh;
+        }
+        .container .serviceBox--1, .container .serviceBox--3 {
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 .icon {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 .icon {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1:hover .icon,
+        .container .serviceBox--2:hover .icon,
+        .container .serviceBox--3:hover .icon,
+        .container .serviceBox--4:hover .icon {
+            top: 15px;
+        }
+        .container .serviceBox--1 .content,
+        .container .serviceBox--2 .content,
+        .container .serviceBox--3 .content,
+        .container .serviceBox--4 .content {
+            height: 70vh;
+        }
+        .container .serviceBox--1:hover .content,
+        .container .serviceBox--2:hover .content,
+        .container .serviceBox--3:hover .content {
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container .serviceBox--4:hover .content {
+            width: 100%;
+            height: 100%;
+        }
+        .container .serviceBox--1 .content h2,
+        .container .serviceBox--2 .content h2,
+        .container .serviceBox--3 .content h2,
+        .container .serviceBox--4 .content h2 {
+            font-size: 1em;
+        }
+        .container .serviceBox--1 .content .content--group,
+        .container .serviceBox--2 .content .content--group,
+        .container .serviceBox--3 .content .content--group,
+        .container .serviceBox--4 .content .content--group {
+            line-height: 1.9em;
+        }
+        .container .serviceBox--1:hover .content .content--group a {
+            font-size: 15px;
+        }
+        .container .serviceBox--1:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--1:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--3:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--3:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--4:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--4:hover .content .content--group .content--group--secondline {
+            width: 50%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container .serviceBox--1 .content .content--group span,
+        .container .serviceBox--2 .content .content--group span,
+        .container .serviceBox--3 .content .content--group span,
+        .container .serviceBox--4 .content .content--group span {
+            font-size: 15px;
+        }
+        .container .serviceBox--2 .content .content--motivation {
+            width: 55vw;
+            margin-right: 0px;
+            margin-left: 20%;
+        }
+        .container .serviceBox--2 .content .content--motivation p {
+            font-size: 12px;
+        }
+        .grid-container .row-code {
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-container .row-code #annotate {
+            padding: 20px;
+        }
+        .grid-container .row-code #annotate p,
+        .grid-container .row-code #annotate span {
+            writing-mode: inherit;
+        }
+        .grid-container .row-code #code .card .active {
+            flex-direction: column;
+        }
+        .grid-container .row-code #code .card .carousel__nav {
+            background-color: #174347;
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+        }
+        .grid-container .row-code #code .card .carousel__icon {
+            fill: #AA9989;
+            width: 25px;
+            height: 25px;
+        }
+        .grid-container .row-code #code .card .carousel-item__info {
+            width: 100%;
+            height: 60%;
+            padding: 0px;
+            text-align: center;
+        }
+        .grid-container .row-code #code .card .carousel-item__image {
+            width: 100%;
+            border-top-right-radius: 45px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+            background-image: url(/curriculum-vitae/static/img/gradient.jpg);
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+            width: 50%;
+            height: 60%;
+            margin-bottom: 36px;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
+            width: 100%;
+            height: 60%;
+            border-top: 10px solid #0D2B2E;
+            border-bottom: 10px solid #0D2B2E;
+            margin-bottom: 36px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .grid-container .row-code #code .card .carousel-item__subtitle {
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item__title {
+            letter-spacing: 1px;
+            font-size: 30px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+            border-left-style: none;
+            border-top-style: double;
+        }
+        .grid-container .row-experience {
+            height: calc(100% + 20px);
+        }
+        .grid-container .row-experience .zz {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 10px);
+            padding-top: 10px;
+        }
+        .grid-container .row-experience .zz .row-experience--block-1,
+        .grid-container .row-experience .zz .row-experience--block-2,
+        .grid-container .row-experience .zz .row-experience--block-3,
+        .grid-container .row-experience .zz .row-experience--block-4,
+        .grid-container .row-experience .zz .row-experience--block-5, 
+        .grid-container .row-experience .zz .row-experience--block-6 {
+            height: 100vh;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            margin-top: 40px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img {
+            width: 150px;
+            height: 150px;
+        }
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img {
+            width: 150px;
+            height: 110px;
+        }
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img {
+            width: 200px;
+            height: 100px;
+            filter: brightness(1500%);
+        }
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            width: 230px;
+            height: 130px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+            font-size: 1.25em;
+        }
     }
-    .container .serviceBox--1, .container .serviceBox--3 {
-        border-radius: 0px;
+/* iPhone X */
+/* 2436x1125px at 458ppi */
+@media only screen 
+    and (device-width : 375px) 
+    and (device-height : 812px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        .container .serviceBox--1, .container .serviceBox--2,
+        .container .serviceBox--3, .container .serviceBox--4 {
+            width: 90vw;
+            height: 70vh;
+        }
+        .container .serviceBox--1, .container .serviceBox--3 {
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 .icon {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 .icon {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1:hover .icon,
+        .container .serviceBox--2:hover .icon,
+        .container .serviceBox--3:hover .icon,
+        .container .serviceBox--4:hover .icon {
+            top: 15px;
+        }
+        .container .serviceBox--1 .content,
+        .container .serviceBox--2 .content,
+        .container .serviceBox--3 .content,
+        .container .serviceBox--4 .content {
+            height: 70vh;
+        }
+        .container .serviceBox--1:hover .content,
+        .container .serviceBox--2:hover .content,
+        .container .serviceBox--3:hover .content {
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container .serviceBox--4:hover .content {
+            width: 100%;
+            height: 100%;
+        }
+        .container .serviceBox--1 .content h2,
+        .container .serviceBox--2 .content h2,
+        .container .serviceBox--3 .content h2,
+        .container .serviceBox--4 .content h2 {
+            font-size: 1em;
+        }
+        .container .serviceBox--1 .content .content--group,
+        .container .serviceBox--2 .content .content--group,
+        .container .serviceBox--3 .content .content--group,
+        .container .serviceBox--4 .content .content--group {
+            line-height: 1.9em;
+        }
+        .container .serviceBox--1:hover .content .content--group a {
+            font-size: 15px;
+        }
+        .container .serviceBox--1:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--1:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--3:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--3:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--4:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--4:hover .content .content--group .content--group--secondline {
+            width: 50%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container .serviceBox--1 .content .content--group span,
+        .container .serviceBox--2 .content .content--group span,
+        .container .serviceBox--3 .content .content--group span,
+        .container .serviceBox--4 .content .content--group span {
+            font-size: 15px;
+        }
+        .container .serviceBox--2 .content .content--motivation {
+            width: 55vw;
+            margin-right: 0px;
+            margin-left: 20%;
+        }
+        .container .serviceBox--2 .content .content--motivation p {
+            font-size: 12px;
+        }
+        .grid-container .row-code {
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-container .row-code #annotate {
+            padding: 20px;
+        }
+        .grid-container .row-code #annotate p,
+        .grid-container .row-code #annotate span {
+            writing-mode: inherit;
+        }
+        .grid-container .row-code #code .card .active {
+            flex-direction: column;
+        }
+        .grid-container .row-code #code .card .carousel__nav {
+            background-color: #174347;
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+        }
+        .grid-container .row-code #code .card .carousel__icon {
+            fill: #AA9989;
+            width: 25px;
+            height: 25px;
+        }
+        .grid-container .row-code #code .card .carousel-item__info {
+            width: 100%;
+            height: 60%;
+            padding: 0px;
+            text-align: center;
+        }
+        .grid-container .row-code #code .card .carousel-item__image {
+            width: 100%;
+            border-top-right-radius: 45px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+            background-image: url(/curriculum-vitae/static/img/gradient.jpg);
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+            width: 50%;
+            height: 60%;
+            margin-bottom: 36px;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
+            width: 100%;
+            height: 60%;
+            border-top: 10px solid #0D2B2E;
+            border-bottom: 10px solid #0D2B2E;
+            margin-bottom: 36px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .grid-container .row-code #code .card .carousel-item__subtitle {
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item__title {
+            letter-spacing: 1px;
+            font-size: 30px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+            border-left-style: none;
+            border-top-style: double;
+        }
+        .grid-container .row-experience {
+            height: calc(100% + 20px);
+        }
+        .grid-container .row-experience .zz {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 10px);
+            padding-top: 10px;
+        }
+        .grid-container .row-experience .zz .row-experience--block-1,
+        .grid-container .row-experience .zz .row-experience--block-2,
+        .grid-container .row-experience .zz .row-experience--block-3,
+        .grid-container .row-experience .zz .row-experience--block-4,
+        .grid-container .row-experience .zz .row-experience--block-5, 
+        .grid-container .row-experience .zz .row-experience--block-6 {
+            height: 100vh;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            margin-top: 40px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img {
+            width: 150px;
+            height: 150px;
+        }
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img {
+            width: 150px;
+            height: 110px;
+        }
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img {
+            width: 200px;
+            height: 100px;
+            filter: brightness(1500%);
+        }
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            width: 230px;
+            height: 130px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+            font-size: 1.25em;
+        }
     }
-    .container .serviceBox--1 {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
+/* iPhone XR */
+/* 1792x828px at 326ppi */ 
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 2) {
+
     }
-    .container .serviceBox--4 {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
+/* iPhone XS */
+/* 2688x1242px at 458ppi */
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 896px) 
+    and (-webkit-device-pixel-ratio : 3) {
+        .container {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+        }
+        .container .serviceBox--1, .container .serviceBox--2,
+        .container .serviceBox--3, .container .serviceBox--4 {
+            width: 90vw;
+            height: 70vh;
+        }
+        .container .serviceBox--1, .container .serviceBox--3 {
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
+            border-radius: 0px;
+        }
+        .container .serviceBox--1 .icon {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .container .serviceBox--4 .icon {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .container .serviceBox--1:hover .icon,
+        .container .serviceBox--2:hover .icon,
+        .container .serviceBox--3:hover .icon,
+        .container .serviceBox--4:hover .icon {
+            top: 15px;
+        }
+        .container .serviceBox--1 .content,
+        .container .serviceBox--2 .content,
+        .container .serviceBox--3 .content,
+        .container .serviceBox--4 .content {
+            height: 70vh;
+        }
+        .container .serviceBox--1:hover .content,
+        .container .serviceBox--2:hover .content,
+        .container .serviceBox--3:hover .content {
+            width: 70vw;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .container .serviceBox--4:hover .content {
+            width: 100%;
+            height: 100%;
+        }
+        .container .serviceBox--1 .content h2,
+        .container .serviceBox--2 .content h2,
+        .container .serviceBox--3 .content h2,
+        .container .serviceBox--4 .content h2 {
+            font-size: 1em;
+        }
+        .container .serviceBox--1 .content .content--group,
+        .container .serviceBox--2 .content .content--group,
+        .container .serviceBox--3 .content .content--group,
+        .container .serviceBox--4 .content .content--group {
+            line-height: 1.9em;
+        }
+        .container .serviceBox--1:hover .content .content--group a {
+            font-size: 15px;
+        }
+        .container .serviceBox--1:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--1:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--3:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--3:hover .content .content--group .content--group--secondline,
+        .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
+        .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
+        .container .serviceBox--4:hover .content .content--group .content--group--firstline,
+        .container .serviceBox--4:hover .content .content--group .content--group--secondline {
+            width: 50%;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container .serviceBox--1 .content .content--group span,
+        .container .serviceBox--2 .content .content--group span,
+        .container .serviceBox--3 .content .content--group span,
+        .container .serviceBox--4 .content .content--group span {
+            font-size: 15px;
+        }
+        .container .serviceBox--2 .content .content--motivation {
+            width: 55vw;
+            margin-right: 0px;
+            margin-left: 20%;
+        }
+        .container .serviceBox--2 .content .content--motivation p {
+            font-size: 12px;
+        }
+        .grid-container .row-code {
+            display: flex;
+            flex-direction: column;
+        }
+        .grid-container .row-code #annotate {
+            padding: 20px;
+        }
+        .grid-container .row-code #annotate p,
+        .grid-container .row-code #annotate span {
+            writing-mode: inherit;
+        }
+        .grid-container .row-code #code .card .active {
+            flex-direction: column;
+        }
+        .grid-container .row-code #code .card .carousel__nav {
+            background-color: #174347;
+            width: 100%;
+            text-align: center;
+            border-radius: 0;
+        }
+        .grid-container .row-code #code .card .carousel__icon {
+            fill: #AA9989;
+            width: 25px;
+            height: 25px;
+        }
+        .grid-container .row-code #code .card .carousel-item__info {
+            width: 100%;
+            height: 60%;
+            padding: 0px;
+            text-align: center;
+        }
+        .grid-container .row-code #code .card .carousel-item__image {
+            width: 100%;
+            border-top-right-radius: 45px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            width: 75%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
+            background-image: url(/curriculum-vitae/static/img/gradient.jpg);
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
+            width: 50%;
+            height: 60%;
+            margin-bottom: 36px;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
+            height: 100%;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            cursor: default;
+            display: flex;
+        }
+        .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
+        .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
+            width: 100%;
+            height: 60%;
+            border-top: 10px solid #0D2B2E;
+            border-bottom: 10px solid #0D2B2E;
+            margin-bottom: 36px;
+            user-select: none;
+            -webkit-user-select: none;
+        }
+        .grid-container .row-code #code .card .carousel-item__subtitle {
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item__title {
+            letter-spacing: 1px;
+            font-size: 30px;
+        }
+        .grid-container .row-code #code .card .carousel-item__description {
+            font-size: 14px;
+            margin-top: 15px;
+        }
+        .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
+            border-left-style: none;
+            border-top-style: double;
+        }
+        .grid-container .row-experience {
+            height: calc(100% + 20px);
+        }
+        .grid-container .row-experience .zz {
+            display: flex;
+            flex-direction: column;
+            height: calc(100% - 10px);
+            padding-top: 10px;
+        }
+        .grid-container .row-experience .zz .row-experience--block-1,
+        .grid-container .row-experience .zz .row-experience--block-2,
+        .grid-container .row-experience .zz .row-experience--block-3,
+        .grid-container .row-experience .zz .row-experience--block-4,
+        .grid-container .row-experience .zz .row-experience--block-5, 
+        .grid-container .row-experience .zz .row-experience--block-6 {
+            height: 100vh;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            margin-top: 40px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-5 .block--experience a img {
+            width: 150px;
+            height: 150px;
+        }
+        .grid-container .row-experience .row-experience--block-2 .block--experience a img {
+            width: 150px;
+            height: 110px;
+        }
+        .grid-container .row-experience .row-experience--block-3 .block--experience a img {
+            width: 200px;
+            height: 100px;
+            filter: brightness(1500%);
+        }
+        .grid-container .row-experience .row-experience--block-4 .block--experience a img,
+        .grid-container .row-experience .row-experience--block-6 .block--experience a img {
+            width: 230px;
+            height: 130px;
+        }
+        .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
+        .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
+            font-size: 1.25em;
+        }
     }
-    .container .serviceBox--1 .icon, .container .serviceBox--3 .icon{
-        border-radius: 0px;
-    }
-    .container .serviceBox--1 .icon {
-        border-top-left-radius: 10px;
-        border-top-right-radius: 10px;
-    }
-    .container .serviceBox--4 .icon {
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-    }
-    .container .serviceBox--1:hover .icon,
-    .container .serviceBox--2:hover .icon,
-    .container .serviceBox--3:hover .icon,
-    .container .serviceBox--4:hover .icon {
-        top: 15px;
-    }
-    .container .serviceBox--1 .content,
-    .container .serviceBox--2 .content,
-    .container .serviceBox--3 .content,
-    .container .serviceBox--4 .content {
-        height: 70vh;
-    }
-    .container .serviceBox--1:hover .content,
-    .container .serviceBox--2:hover .content,
-    .container .serviceBox--3:hover .content {
-        width: 70vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .container .serviceBox--4:hover .content {
-        width: 100%;
-        height: 100%;
-    }
-    .container .serviceBox--1 .content h2,
-    .container .serviceBox--2 .content h2,
-    .container .serviceBox--3 .content h2,
-    .container .serviceBox--4 .content h2 {
-        font-size: 1em;
-    }
-    .container .serviceBox--1 .content .content--group,
-    .container .serviceBox--2 .content .content--group,
-    .container .serviceBox--3 .content .content--group,
-    .container .serviceBox--4 .content .content--group {
-        line-height: 1.9em;
-    }
-    .container .serviceBox--1:hover .content .content--group a {
-        font-size: 15px;
-    }
-    .container .serviceBox--1:hover .content .content--group .content--group--firstline,
-    .container .serviceBox--1:hover .content .content--group .content--group--secondline,
-    .container .serviceBox--1:hover .content .content--group .content--group--thirdline,
-    .container .serviceBox--1:hover .content .content--group .content--group--fourthline,
-    .container .serviceBox--3:hover .content .content--group .content--group--firstline,
-    .container .serviceBox--3:hover .content .content--group .content--group--secondline,
-    .container .serviceBox--3:hover .content .content--group .content--group--thirdline,
-    .container .serviceBox--3:hover .content .content--group .content--group--fourthline,
-    .container .serviceBox--4:hover .content .content--group .content--group--firstline,
-    .container .serviceBox--4:hover .content .content--group .content--group--secondline {
-        width: 50%;
-        margin: 0px;
-        padding: 0px;
-    }
-    .container .serviceBox--1 .content .content--group span,
-    .container .serviceBox--2 .content .content--group span,
-    .container .serviceBox--3 .content .content--group span,
-    .container .serviceBox--4 .content .content--group span {
-        font-size: 15px;
-    }
-    .container .serviceBox--2 .content .content--motivation {
-        width: 55vw;
-        margin-right: 0px;
-        margin-left: 20%;
-    }
-    .container .serviceBox--2 .content .content--motivation p {
-        font-size: 12px;
-    }
-    .grid-container .row-code {
-        display: flex;
-        flex-direction: column;
-    }
-    .grid-container .row-code #annotate {
-        padding: 20px;
-    }
-    .grid-container .row-code #annotate p,
-    .grid-container .row-code #annotate span {
-        writing-mode: inherit;
-    }
-    .grid-container .row-code #code .card .active {
-        flex-direction: column;
-    }
-    .grid-container .row-code #code .card .carousel__nav {
-        background-color: #174347;
-        width: 100%;
-        text-align: center;
-        border-radius: 0;
-    }
-    .grid-container .row-code #code .card .carousel__icon {
-        fill: #AA9989;
-        width: 25px;
-        height: 25px;
-    }
-    .grid-container .row-code #code .card .carousel-item__info {
-        width: 100%;
-        height: 60%;
-        padding: 0px;
-        text-align: center;
-    }
-    .grid-container .row-code #code .card .carousel-item__image {
-        width: 100%;
-        border-top-right-radius: 45px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
-    .grid-container .row-code #code .card .carousel-item__description {
-        width: 75%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image,
-    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image,
-    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image {
-        background-image: url(/curriculum-vitae/static/img/gradient.jpg);
-    }
-    .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        cursor: default;
-        display: flex;
-    }
-    .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image .logo img {
-        width: 50%;
-        height: 60%;
-        margin-bottom: 36px;
-    }
-    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper,
-    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper,
-    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper {
-        height: 100%;
-        width: 100%;
-        justify-content: center;
-        align-items: center;
-        cursor: default;
-        display: flex;
-    }
-    .grid-container .row-code #code .card .carousel-item--1 .carousel-item__image .logo--wrapper img,
-    .grid-container .row-code #code .card .carousel-item--2 .carousel-item__image .logo--wrapper img,
-    .grid-container .row-code #code .card .carousel-item--3 .carousel-item__image .logo--wrapper img {
-        width: 100%;
-        height: 60%;
-        border-top: 10px solid #0D2B2E;
-        border-bottom: 10px solid #0D2B2E;
-        margin-bottom: 36px;
-        user-select: none;
-        -webkit-user-select: none;
-    }
-    .grid-container .row-code #code .card .carousel-item__subtitle {
-        margin-top: 15px;
-    }
-    .grid-container .row-code #code .card .carousel-item__title {
-        letter-spacing: 1px;
-        font-size: 30px;
-    }
-    .grid-container .row-code #code .card .carousel-item__description {
-        font-size: 14px;
-        margin-top: 15px;
-    }
-    .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
-        border-left-style: none;
-        border-top-style: double;
-    }
-    .grid-container .row-experience {
-        height: calc(100% + 20px);
-    }
-    .grid-container .row-experience .zz {
-        display: flex;
-        flex-direction: column;
-        height: calc(100% - 10px);
-        padding-top: 10px;
-    }
-    .grid-container .row-experience .zz .row-experience--block-1,
-    .grid-container .row-experience .zz .row-experience--block-2,
-    .grid-container .row-experience .zz .row-experience--block-3,
-    .grid-container .row-experience .zz .row-experience--block-4,
-    .grid-container .row-experience .zz .row-experience--block-5, 
-    .grid-container .row-experience .zz .row-experience--block-6 {
-        height: 100vh;
-    }
-    .grid-container .row-experience .row-experience--block-1 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-2 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-3 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-4 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-5 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-6 .block--experience a img {
-        margin-top: 40px;
-    }
-    .grid-container .row-experience .row-experience--block-1 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-5 .block--experience a img {
-        width: 150px;
-        height: 150px;
-    }
-    .grid-container .row-experience .row-experience--block-2 .block--experience a img {
-        width: 150px;
-        height: 110px;
-    }
-    .grid-container .row-experience .row-experience--block-3 .block--experience a img {
-        width: 200px;
-        height: 100px;
-        filter: brightness(1500%);
-    }
-    .grid-container .row-experience .row-experience--block-4 .block--experience a img,
-    .grid-container .row-experience .row-experience--block-6 .block--experience a img {
-        width: 230px;
-        height: 130px;
-    }
-    .grid-container .row-experience .row-experience--block-1 .block--experience ul li,
-    .grid-container .row-experience .row-experience--block-2 .block--experience ul li,
-    .grid-container .row-experience .row-experience--block-3 .block--experience ul li,
-    .grid-container .row-experience .row-experience--block-4 .block--experience ul li,
-    .grid-container .row-experience .row-experience--block-5 .block--experience ul li,
-    .grid-container .row-experience .row-experience--block-6 .block--experience ul li {
-        font-size: 1.25em;
-    }
-}
