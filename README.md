@@ -1,1 +1,1 @@
-# https://alexeevivan.github.io/curriculum-vitae/
+https://alexeevivan.github.io/curriculum-vitae/
