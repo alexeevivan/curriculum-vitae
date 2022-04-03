@@ -464,14 +464,34 @@ typed-cursor typed-cursor--blink{
     overflow: scroll;
 }
 .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre {
-    background: #F0F0F0;
+    background: #1E2431;
     margin: 0;
     border-left-style: double;
     font-size: 0.5em;
     padding-left: 60px;
 }
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] {
+    text-shadow: 0 1px rgba(255, 255, 255, 0);
+}
 .grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre code {
     overflow-wrap: break-word;
+    color: #FFCF61;
+}
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .language-css .token.string,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .style .token.string,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.entity,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.operator,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.url {
+    color: #FFCF61;
+    background: hsla(0, 0%, 100%, 0);
+}
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.attr-name,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.builtin,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.char,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.inserted,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.selector,
+.grid-container .row-code #code .card .carousel-item--4 .carousel-item__image pre[class*=language-] code[class*=language-] .token.string {
+    color: #CAFF6A;
 }
 .grid-container .row-code #code .card .carousel-item--5 .carousel-item__image {
     background-image: url('/curriculum-vitae/static/img/gradient.jpg');
