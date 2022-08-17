@@ -682,7 +682,8 @@ typed-cursor typed-cursor--blink{
 @media only screen
     and (min-device-width: 375px)
     and (max-device-height: 667px)
-    and (-webkit-device-pixel-ratio: 2) {
+    and (-webkit-device-pixel-ratio: 2)
+    and (orientation: portrait) {
         .container {
             display: flex;
             flex-direction: row;
@@ -934,7 +935,8 @@ typed-cursor typed-cursor--blink{
 @media only screen 
     and (min-device-width: 414px) 
     and (max-device-height: 736px) 
-    and (-webkit-device-pixel-ratio: 3) {
+    and (-webkit-device-pixel-ratio: 3)
+    and (orientation: portrait) {
         .container {
             display: flex;
             flex-direction: row;
@@ -1187,7 +1189,8 @@ typed-cursor typed-cursor--blink{
 @media only screen 
     and (device-width : 375px) 
     and (device-height : 812px) 
-    and (-webkit-device-pixel-ratio : 3) {
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: portrait) {
         .container {
             display: flex;
             flex-direction: row;
@@ -1448,7 +1451,8 @@ typed-cursor typed-cursor--blink{
 @media only screen 
     and (device-width : 414px) 
     and (device-height : 896px) 
-    and (-webkit-device-pixel-ratio : 3) {
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation: portrait) {
         .container {
             display: flex;
             flex-direction: row;
